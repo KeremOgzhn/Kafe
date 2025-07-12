@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kahverengi tonları -->
+    <color name="light_brown">#FFF8E1</color> <!-- Açık kahverengi -->
+    <color name="brown">#8B4513</color> <!-- Orta kahverengi -->
+    <color name="dark_brown">#3E2723</color> <!-- Çok koyu kahverengi -->
+    <color name="white">#FFFFFF</color>
+</resources>

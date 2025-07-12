@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kafe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#FFF8E1</item>
+        <item name="colorPrimaryVariant">#FFF8E1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFF8E1</item> <!-- StatusBar rengi -->
+        <item name="android:windowLightStatusBar">true</item> <!-- İkonları siyah yapar -->
+
+    </style>
+
+    <!-- AlertDialog için özel stil -->
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">#FFF8E1</item> <!-- Buton renklerini belirler -->
+        <item name="colorPrimaryVariant">#5D4037</item> <!-- Daha koyu ton -->
+        <item name="android:buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <!-- Pozitif buton stili -->
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFF8E1</item>
+    </style>
+
+
+    <!-- Negatif buton stili -->
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFF8E1</item>
+    </style>
+
+    <style name="Theme.Kafe" parent="Base.Theme.Kafe"/>
+
+</resources>

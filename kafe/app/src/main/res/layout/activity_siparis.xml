@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF8E1">
+
+    <!-- Ürünler için Liste -->
+
+    <!-- Sabit Alt Kısım -->
+
+    <ScrollView
+        android:id="@+id/urunlerScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312">
+
+        <LinearLayout
+            android:id="@+id/urunListeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Sipariş Ekranı Başlığı -->
+            <TextView
+                android:id="@+id/siparisEkraniText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="Sipariş Ekranı"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <!-- Hoşgeldiniz Mesajı -->
+            <TextView
+                android:id="@+id/hosgeldinizText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="Hoşgeldiniz"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Ürünler Listesi -->
+            <!-- Ürünler buraya dinamik olarak eklenecek -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="421dp"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFF8E1"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="585dp">
+
+        <!-- Toplam Fiyat -->
+        <TextView
+            android:id="@+id/toplamFiyatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Toplam Fiyat: 0₺"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Ödeme Yap Butonu -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/brown"
+            android:onClick="showPaymentDialog"
+            android:text="Ödeme Yap" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
